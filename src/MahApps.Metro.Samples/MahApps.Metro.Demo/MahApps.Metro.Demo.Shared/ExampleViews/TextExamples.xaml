@@ -64,7 +64,7 @@
                          Controls:TextBoxHelper.ButtonCommand="{Binding TextBoxButtonCmd, Mode=OneWay}"
                          Controls:TextBoxHelper.ClearTextButton="True"
                          Controls:TextBoxHelper.UseFloatingWatermark="True"
-                         Controls:TextBoxHelper.Watermark="Search...">
+                         Controls:TextBoxHelper.Watermark="Search..." TextChanged="TextBox_TextChanged">
                     <TextBox.InputBindings>
                         <KeyBinding Key="Return"
                                     Command="{Binding TextBoxButtonCmd, Mode=OneWay}"

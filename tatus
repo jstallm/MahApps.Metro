@@ -1,0 +1,499 @@
+[33mcommit a3563b4a9ca451267d6000699f25023372f22db7[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Oct 24 22:19:36 2016 +0200
+
+    Update 1.4.0.md
+
+[33mcommit 21dfea15048661627da6cffce3548c42122938af[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Oct 24 22:07:32 2016 +0200
+
+    Hotfix for DateTimePicker/TimePicker (#2710)
+    
+    * Add changes from @xxMUROxx
+      - Binding should now work correctly in both directions
+      - [Fix] Issue where clearing text does not immediately set value to ""
+      - Add Unit-Test for DateTimePicker
+      - [Fix] Issue where Hour 0 is not shown when using 24h clock
+      - [Fix] Issue where Binding issues on DateTimePicker/TimePicker are shown on the output window
+      - [Fix] Change DateTimePicker.SelectedDate to BindsTwoWayByDefault. The reason is that we do not have to use Mode=TwoWay explicit, and DatePicker.SelectedDate has BindsTwoWayByDefault too.
+    
+    * [Fix] Failing Unit Test in PR #2710 (#2711)
+    
+    * SetDatePartValues only if datetime is not null
+    
+    * Add changes to 1.4.0.md
+
+[33mcommit 41726a6a6b550409150fac543412aa461bae342a[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Wed Oct 19 13:43:59 2016 +0200
+
+    [WIP] SplitView and HamburgerMenu (#2704)
+    
+    SplitView and HamburgerMenu
+
+[33mcommit daa0f5142bc783658fc54700fac7ea4ac9330e5b[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Fri Oct 14 15:08:09 2016 +0200
+
+    Change icon for TimePicker @p76984275
+      Closes #2700
+      Update README
+
+[33mcommit 2fed9c9d91695903d0548fc4dffb7f1af3a1a917[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Fri Oct 14 00:27:11 2016 +0200
+
+    Restructure repo (#2701)
+    
+    * Restructure solution and projects (tests not yet finished)
+    
+    * Move Caliburn theme to shared project
+    
+    * Move Caliburn App.xaml to shared project
+    
+    * Move Metro.Demo App.xaml to shared project
+    
+    * Add MahApps.Metro.Tests
+    
+    * paket auto-restore on
+    
+    * Update packages
+    
+    * Move all to src
+    
+    * Unload Mahapps.Metro.Tests.NET45 (doesn't works)
+    
+    * Fix output and nuspec
+    
+    * Remove unnecessary usings
+
+[33mcommit 0edf8332a7a42eb4fd8a912f2efeb9f6819cb2dc[m
+Author: Thomas Freudenberg <info@thomasfreudenberg.com>
+Date:   Sun Oct 9 18:24:32 2016 +0200
+
+    added property IconScalingMode to MetroWindow to set the icon's MultiFrameImageMode (#2667)
+
+[33mcommit dbe25a2d0798baaa20c4f7e05ebfcbfb96109a9c[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Sat Oct 8 12:13:44 2016 +0200
+
+    Merge pull request #2689 from xxMUROxx/feature/SharedProject
+    
+    [Introducing] SharedProject (reverted from commit 79eb4b389e4c85f4ff60ff77b67605c41afc8345)
+
+[33mcommit 79eb4b389e4c85f4ff60ff77b67605c41afc8345[m
+Merge: 32fd945 6f5f523
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Wed Oct 5 16:08:05 2016 +0200
+
+    Merge pull request #2689 from xxMUROxx/feature/SharedProject
+    
+    [Introducing] SharedProject
+
+[33mcommit 6f5f523993b39a3336c04c7a73faf5e660059533[m
+Author: Michael Mairegger <michael.mairegger@yahoo.de>
+Date:   Wed Oct 5 14:00:01 2016 +0200
+
+    [Introducting] SharedProject
+
+[33mcommit 32fd94520438a9d560a0024070e4a572671016aa[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Tue Oct 4 10:33:14 2016 +0200
+
+    Closing window sample for https://github.com/MahApps/MahApps.Metro/issues/2685
+
+[33mcommit 1ae61d816dbfa03de4344be8c37811e74d18d003[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Oct 3 13:56:08 2016 +0200
+
+    Remove this very old stuff
+
+[33mcommit 88cccc5d43349a80eec3e71f357452774fc0af16[m
+Merge: a5ae063 60c0fb3
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Fri Sep 30 10:26:08 2016 +0200
+
+    Merge branch 'mikeasage-develop' into develop
+
+[33mcommit 60c0fb3477e2d6f072da642034bebb77479d93ee[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Fri Sep 30 10:25:49 2016 +0200
+
+    Fix another `TopMost` issue
+      If the window is top most and you switch to another window the top most will be gone.
+      Add comment at the null check.
+
+[33mcommit 50075890e2d61c6c5c8c2be3ca50a1a288dc8638[m
+Author: mikeasage <mikeasage@sbcglobal.net>
+Date:   Wed Sep 28 16:45:32 2016 -0500
+
+    Fix for issue 2674: Null Reference Exception in BorderlessWindowBehavior.TopMostChangeNotifierOnValueChanged
+
+[33mcommit a5ae06351bdc045e50b71aa3c8696243c5e91010[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Tue Sep 27 22:36:22 2016 +0200
+
+    Don't focus the `FlyoutsControl`
+
+[33mcommit 6f6f5f9a9d56ca400ef76295a652c2fe8a602f74[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 26 23:12:50 2016 +0200
+
+    Add 1.4.0 doc
+
+[33mcommit 073d7312b7cd4f3bd6207d823d89a3897b19874a[m
+Author: ButchersBoy <james.willock@mulhollandsoftware.com>
+Date:   Mon Sep 26 17:46:57 2016 +0100
+
+    remove redundant using
+
+[33mcommit b09bf320bad8f598a26f8a83935842334030a99b[m
+Author: ButchersBoy <james.willock@mulhollandsoftware.com>
+Date:   Mon Sep 26 17:45:06 2016 +0100
+
+    Don't run the focus operation when closing a flyout
+
+[33mcommit e262cb9f661019e22247a0838d3ff69d44772f07[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Sat Sep 24 00:53:17 2016 +0200
+
+    set to next version
+
+[33mcommit 8631fbc43541d533c20f865d28a9ee62050ada82[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Sat Sep 24 00:39:13 2016 +0200
+
+    fix license link
+
+[33mcommit dbb70247c5071141c4fee491c3dc3ae44a42d274[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Sat Sep 24 00:18:16 2016 +0200
+
+    test2
+
+[33mcommit dba6817201006513a59845674e125e393bffc21f[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Sat Sep 24 00:13:55 2016 +0200
+
+    test
+
+[33mcommit e945919a8aaa303951c7e8195491b54a7153bec4[m
+Merge: 0e68a5b 4f32512
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Sat Sep 24 00:01:35 2016 +0200
+
+    Merge pull request #2666 from MahApps/develop
+    
+    Merging v1.3.0 dev content to master
+
+[33mcommit 4f3251293753f68c92b3e6dacbc01bdaa811c894[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:52:33 2016 +0200
+
+    readme tweak
+
+[33mcommit 38edc4e9dc43f9cea720d877d80847fb63752582[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:50:31 2016 +0200
+
+    Update screenshots
+
+[33mcommit 5c6a38fe5a02d997a3de96bab79fef9e97ac5f76[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:28:05 2016 +0200
+
+    Build sample for release too
+
+[33mcommit 642c0beba43dcd7f0b1f4e2fda06c93dffea3e4a[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:26:09 2016 +0200
+
+    Costura Fody for the Caliburn sample
+
+[33mcommit 9cd475e1221b8353a31c20b2c877767d2800a0a5[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:19:34 2016 +0200
+
+    Costura Fody for the main sample
+
+[33mcommit e25e4c0cbc1005e6ff44934247af8dec5d2fc7db[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:08:39 2016 +0200
+
+    Demo stuff
+
+[33mcommit 3566cd1f915fa6f2c080ffe158641c778bf080ce[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 23:04:09 2016 +0200
+
+    Introduce new styles for Circle/CircleToggle button
+      Revert last change, cause it's a breaking change.
+      The new styles removes the bad non removable margin (4).
+
+[33mcommit 300ce95d3b9e4413ad5ee15d358e3280aefacc32[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 17:44:20 2016 +0200
+
+    Update NuGet packages
+
+[33mcommit ac610659fd0d72520d5496362d4143505de64d8f[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 17:39:07 2016 +0200
+
+    Circle/CircleToggle button
+      Remove bad non removable margin (4)
+
+[33mcommit 9ecb6586e31bd9627efdf82bb65e96a916e4e05d[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 17:30:45 2016 +0200
+
+    DateTimePicker property changes
+      AllowsTransparency="True", Focusable="False" and PopupAnimation="Fade"
+
+[33mcommit 8cc4fd8f5287d6377b8a2878f72d6682cfb43d3b[m
+Merge: fd47b9f 947ff6b
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 17:23:03 2016 +0200
+
+    Merge branch 'Deadpikle-develop' into develop
+
+[33mcommit 947ff6b81763871bc30fee6c908c24857a257f51[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 17:22:14 2016 +0200
+
+    Some minor changes
+      Use OnIsKeyboardFocusWithinChanged instead using parent window deactivated stuff
+      AllowsTransparency="True" and Focusable="False" for Popup
+
+[33mcommit 5c72779efce61b0127bc5925ae6bfd6bb5eb4861[m
+Merge: fd47b9f b5621f8
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Fri Sep 23 15:08:43 2016 +0200
+
+    Merge branch 'develop' of https://github.com/Deadpikle/MahApps.Metro into Deadpikle-develop
+
+[33mcommit fd47b9ff616febc36c86a6b332578e011f181ce3[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Thu Sep 22 17:28:29 2016 +0200
+
+    Use RtlGetVersion for IsWindows10OrHigher
+
+[33mcommit b5621f80fb47807a5a10044b5258fe78982263a3[m
+Merge: 86b40f3 fb5a713
+Author: Deadpikle <Deadpikle@users.noreply.github.com>
+Date:   Wed Sep 21 08:29:46 2016 -0400
+
+    Merge branch 'develop' into develop
+
+[33mcommit fb5a713b7d0a072889628504216f4ad07fe3e4c1[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Wed Sep 21 13:39:47 2016 +0200
+
+    Fix ListViewItem style if the ListViewItem is used itself instead ItemsSource
+
+[33mcommit 6870b7440e724daf7b2435243fe58509d2e518df[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 20 13:57:18 2016 +0200
+
+    AddLogicalChild doesn't updates the DataContext
+
+[33mcommit 3f8a4515bffc265af53e62e2ad5b90b241c01a5a[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 19 22:09:50 2016 +0200
+
+    SnapsToDevicePixels="False" for PathIconContentControlStyle
+
+[33mcommit 8784a2e729da493654e53d9afb9aab5a8ff54b42[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 15:32:08 2016 +0200
+
+    Update GitLink to v2.3.0
+
+[33mcommit 440a3288aa46cd8501fc5dc2aa5c60f112592fd1[m
+Merge: 90be896 521d5d2
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 19 15:20:54 2016 +0200
+
+    Merge pull request #2646 from MahApps/MIT-license
+    
+    Switch to MIT license
+
+[33mcommit 521d5d2510bff793973ad7820916bd049f5c8d32[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 15:16:32 2016 +0200
+
+    update README
+
+[33mcommit 2396569e189adb94d48344f19d8065f6735b81b6[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 15:11:52 2016 +0200
+
+    Fix Flyout problem with ActualWidth #2656
+      It's not goot to bind to ActualWidth of a Window, cause it gives us wrong values, it's maybe a WPF bug. So it's better to use the FlyoutsControl property.
+
+[33mcommit e18fdc01175ebba033fddd2e64ba6dc4df560ccf[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 11:31:31 2016 +0200
+
+    tweak
+
+[33mcommit eb625521359ee1616da3d0c2e4d9dba671a9dcca[m
+Merge: 27f244b 90be896
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 10:39:55 2016 +0200
+
+    Merge remote-tracking branch 'origin/develop' into MIT-license
+
+[33mcommit 90be89668aa186e91db61b46de2a1c5b0365e3f7[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 10:39:36 2016 +0200
+
+    Fix VisualTreeHelper parent search
+    
+      I think the VisualTreeHelper gives us the right parent also for FrameworkElement
+
+[33mcommit 27f244b7558a1f31660a7ba69151114c11a6fc4b[m
+Merge: 938a4e8 a3f68e9
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 10:22:17 2016 +0200
+
+    Merge remote-tracking branch 'origin/develop' into MIT-license
+
+[33mcommit a3f68e9d7656e68ba3bbda6a6bc7216a8e90d740[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 10:18:24 2016 +0200
+
+    Add WindowCommands, WindowButtonCommands and Flyouts to the logical tree
+      This makes binding to other elements now possible.
+
+[33mcommit 938a4e80b4cb35be2835e150eb5f1771ab9db1f1[m
+Merge: 1c7290b 9a8fdda
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 19 09:16:09 2016 +0200
+
+    Merge remote-tracking branch 'origin/develop' into MIT-license
+
+[33mcommit 86b40f34bae8e02c32b7f275394d2005bb484321[m
+Merge: dafd3fb 9a8fdda
+Author: Deadpikle <mikebobby@sbcglobal.net>
+Date:   Sun Sep 18 09:47:21 2016 -0400
+
+    Merge branch 'develop' of https://github.com/MahApps/MahApps.Metro into develop
+
+[33mcommit 9a8fddaa48d019b2757a4ef55979c8ae3b88c20b[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Sat Sep 17 22:40:21 2016 +0200
+
+    Fix for #2649
+    
+      ContentTemplateSelector doesn't work in MetroAnimatedSingleRowTabControl, MetroAnimatedTabControl and there correspondent styles
+
+[33mcommit dafd3fb7507b06b7feea4d0d53eb8bcfa7ecf543[m
+Merge: 2159071 1e06a3a
+Author: Deadpikle <mikebobby@sbcglobal.net>
+Date:   Fri Sep 16 09:25:59 2016 -0400
+
+    Merge branch 'develop' of https://github.com/MahApps/MahApps.Metro into develop
+
+[33mcommit 1c7290bf272c75b5f27f9037feec458c62468f08[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Thu Sep 15 09:40:39 2016 +0200
+
+    Revert deleting Ms-PL notice
+    
+      Using the code is fine, but not removing the license notice for a bunch of stuff without getting MSFT, Tim Heuer and Avalon OK
+
+[33mcommit 26c53bc467e7a9e27cda87613643111b530105b7[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 13 16:20:09 2016 +0200
+
+    Switch to MIT
+
+[33mcommit 1e06a3aac641bd61b90ed69177db323e96aaea91[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 13 16:09:34 2016 +0200
+
+    Remove unused GrayscaleEffect.dll
+
+[33mcommit b9d5fe9abe26238d7b1f9fe3066f4b080ec71c0a[m
+Merge: 5cec3e0 4adc6c7
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Tue Sep 13 15:54:32 2016 +0200
+
+    Merge pull request #2645 from MahApps/Remove-old-resources-icons
+    
+    Remove old resources icons
+
+[33mcommit 4adc6c7fe49cd59475c3f14280c142533ce64e3e[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 13 15:46:59 2016 +0200
+
+    link to MahApps.Metro.Resources repository
+
+[33mcommit 477684bd4a3c487d215662518128389e81a62c36[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 12 23:03:01 2016 +0200
+
+    Remove MahApps.Metro.Resources usages
+
+[33mcommit 5cec3e0937b257e21e581e467fde6055a3e42731[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Mon Sep 12 11:09:13 2016 +0200
+
+    Remove this
+
+[33mcommit 2159071873620a0eeb285315c72b2ab049bdf95d[m
+Author: Deadpikle <mikebobby@sbcglobal.net>
+Date:   Fri Sep 9 16:02:45 2016 -0400
+
+    Fix bug where your selection didn't change in SplitButton
+
+[33mcommit f88cf464b2c09bafba8a8f947643ab6e3d238900[m
+Author: Deadpikle <mikebobby@sbcglobal.net>
+Date:   Tue Sep 6 09:04:35 2016 -0400
+
+    Monitor keyboard focus so that you can tab out of the popup
+
+[33mcommit e6dd0dee94717f22e3d1af79b42926865793b54e[m
+Merge: 51732ae 26bcea8
+Author: Deadpikle <mikebobby@sbcglobal.net>
+Date:   Tue Sep 6 08:51:39 2016 -0400
+
+    Merge branch 'develop' of https://github.com/MahApps/MahApps.Metro into develop
+
+[33mcommit 26bcea8116ae68be3b1b87a353b7c5b43c263da3[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 6 12:57:42 2016 +0200
+
+    Remove this unnecessary MetroContentControl
+
+[33mcommit 96662a5861d4645d89feb238a7d5d9adfc1ec660[m
+Author: Jan Karger <jan.karger@inform-software.com>
+Date:   Tue Sep 6 12:57:02 2016 +0200
+
+    Update DotSettings
+
+[33mcommit 6d7f466db327d99136ea6e8584adb8ba89acf4f3[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 5 21:41:40 2016 +0200
+
+    Another changes for #2620
+    
+      Check handle for IntPtr.Zero instead for null
+      Call HandleMaximize in SourceInitialized event to make sure the handle for the window is not null
+
+[33mcommit 23ebfe3f1f20a6d6eeed405ab9441612bd633847[m
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 5 20:52:04 2016 +0200
+
+    Test for Culture bug (resolves #2632) #2636
+
+[33mcommit 41ff4233b58ef9983e4f06312a79b52e1fa3815d[m
+Merge: fe7dd82 5e90bb8
+Author: Jan Karger <punkerat76@gmail.com>
+Date:   Mon Sep 5 20:50:19 2016 +0200
+
+    Merge pull request #2636 from xxMUROxx/hotfix/Culture-TimePickerbase
+    
+    [Fix] Culture bug (resolves #2632)
